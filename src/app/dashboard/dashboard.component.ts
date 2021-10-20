@@ -24,15 +24,13 @@ export class DashboardComponent implements OnInit {
   usermoods: any;
   temp = [];
   stories: Array<any> = [];
-mytemp=[];
+
   stories2: any;
   storyform = new FormGroup({
     content: new FormControl(' ')
   })
 
   ngOnInit(): void {
-    for(var i=0;i<52;i++)this.mytemp.push(i);
-    
     this.as.getUserState().subscribe(res => {
       if (!res) this.router.navigate(['/signin'])
       this.user = res;
@@ -112,7 +110,6 @@ addstory() {
 addmood(mood) {
   var date = new Date()
   this.db.collection("Users").doc(this.user.uid).collection("Moods").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " + date.getDate().toString() + " " + date.getDay().toString()).set({ "mood": mood });
-  this.db.collection("Users").doc(this.user.uid).collection("Moods").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " + date.getDate().toString() + " " + date.getDay().toString()).set({ "date": date });
 }
 
 }
