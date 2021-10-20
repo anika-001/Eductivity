@@ -12,7 +12,7 @@ export let navbar = [
     {
         "role":"user",
         "name":"Study",
-        "link":"/study",
+        "link":"/search",
     },
     {
         "role":"user",
@@ -23,5 +23,10 @@ export let navbar = [
         "role":"user",
         "name":"Home",
         "link":"/home",
+    },
+    {
+        "role":"user",
+        "name":"Calmness",
+        "link":"/calm",
     },
 ]

@@ -1,3 +1,4 @@
+
 .parent{
    
 background-size: fill;
@@ -8,8 +9,8 @@ height: 100vh;
 .parent1{
     display:flex;
     flex-direction: row;
-    -ms-transform: translateY(+50%);
-    transform: translateY(+50%);
+    // -ms-transform: translateY(+50%);
+    // transform: translateY(+50%);
 }
 .cards-list {
  
@@ -29,6 +30,7 @@ height: 100vh;
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     transition: 0.4s;
+    
   }
   
   .card .card_image {

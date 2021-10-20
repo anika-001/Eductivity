@@ -9,6 +9,8 @@ import { ForumComponent } from './forum/forum.component';
 import { CalmComponent } from './calm/calm.component';
 import { StudyComponent } from './study/study.component';
 import { SearchComponent } from './search/search.component';
+import { NewsComponent } from './news/news.component';
+import { Dashboard1Component } from './dashboard1/dashboard1.component';
 const routes: Routes = [
   {
     path: "signin",
@@ -42,6 +44,14 @@ const routes: Routes = [
   {
     path: "search",
     component: SearchComponent
+  },
+  {
+    path: "news",
+    component: NewsComponent
+  },
+  {
+    path: "d1",
+    component: Dashboard1Component
   },
   { path: '', redirectTo: '/signin', pathMatch: 'full' }
 ];

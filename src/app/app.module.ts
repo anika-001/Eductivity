@@ -24,6 +24,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CalmComponent } from './calm/calm.component';
 import { StudyComponent } from './study/study.component';
 import { SearchComponent } from './search/search.component';
+import { NewsComponent } from './news/news.component';
+import { CardsComponent } from './cards/cards.component';
+import { Dashboard1Component } from './dashboard1/dashboard1.component';
 
 
 @NgModule({
@@ -37,7 +40,10 @@ import { SearchComponent } from './search/search.component';
     NavbarComponent,
     CalmComponent,
     StudyComponent,
-    SearchComponent
+    SearchComponent,
+    NewsComponent,
+    CardsComponent,
+    Dashboard1Component
   ],
   imports: [
     BrowserModule,

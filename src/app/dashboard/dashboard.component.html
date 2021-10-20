@@ -1,9 +1,7 @@
-
 <div class="main">
     <div class = "title">
         Mood Tracker
     </div>
-  
     <div class="moodboard">
         <div class = "moods">
             <div class = "mood" *ngFor = "let x of usermoods">
@@ -19,7 +17,7 @@
                 </div>
                 <div class = "moodbox md">{{getdate(x.payload.doc.id)}}</div>
             </div>
-            <div class = "mood" *ngFor = "let x of mytemp">
+            <div class = "mood" *ngFor = "let x of temp">
                 <div class = "moodbox" *ngFor = "let x of moods; let i = index">
 
                 </div>
@@ -27,10 +25,6 @@
             </div>
         </div>
     </div>
-
-
-
-    
     <div class = "feeling">
         <div class = "feelingcont">
             <div class = "howfeeling">
@@ -58,8 +52,5 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class = "stickypallete">
-        <div class = "rect" *ngFor = "let i of [0, 1, 2, 3, 4, 5]">{{moods[i]}}</div> 
     </div>
 </div>

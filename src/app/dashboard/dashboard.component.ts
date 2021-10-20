@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
     "average, normal, uneventful, good",
     "sick, tired, lazy, dull, unmotivated, bored",
     "sad, lonely, numb, depressed, insecure",
-    "angry, frustrated, anxious, grumpy","mood1","mood2"]
+    "angry, frustrated, anxious, grumpy"]
   user: any;
   months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -112,6 +112,7 @@ addstory() {
 addmood(mood) {
   var date = new Date()
   this.db.collection("Users").doc(this.user.uid).collection("Moods").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " + date.getDate().toString() + " " + date.getDay().toString()).set({ "mood": mood });
+  this.db.collection("Users").doc(this.user.uid).collection("Moods").doc(date.getFullYear().toString() + " " + date.getMonth().toString() + " " + date.getDate().toString() + " " + date.getDay().toString()).set({ "date": date });
 }
 
 }
