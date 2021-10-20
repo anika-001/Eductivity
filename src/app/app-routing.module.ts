@@ -6,6 +6,9 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { NonogramComponent } from './nonogram/nonogram.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForumComponent } from './forum/forum.component';
+import { CalmComponent } from './calm/calm.component';
+import { StudyComponent } from './study/study.component';
+import { SearchComponent } from './search/search.component';
 const routes: Routes = [
   {
     path: "signin",
@@ -28,6 +31,17 @@ const routes: Routes = [
   {
     path: "forum",
     component: ForumComponent
+  }, {
+    path: "calm",
+    component: CalmComponent
+  },
+  {
+    path: "study",
+    component: StudyComponent
+  },
+  {
+    path: "search",
+    component: SearchComponent
   },
   { path: '', redirectTo: '/signin', pathMatch: 'full' }
 ];

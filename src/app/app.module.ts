@@ -21,6 +21,9 @@ import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ForumComponent } from './forum/forum.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CalmComponent } from './calm/calm.component';
+import { StudyComponent } from './study/study.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -31,7 +34,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     NonogramComponent,
     DashboardComponent,
     ForumComponent,
-    NavbarComponent
+    NavbarComponent,
+    CalmComponent,
+    StudyComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

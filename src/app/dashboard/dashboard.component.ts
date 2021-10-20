@@ -17,20 +17,22 @@ export class DashboardComponent implements OnInit {
     "average, normal, uneventful, good",
     "sick, tired, lazy, dull, unmotivated, bored",
     "sad, lonely, numb, depressed, insecure",
-    "angry, frustrated, anxious, grumpy"]
+    "angry, frustrated, anxious, grumpy","mood1","mood2"]
   user: any;
   months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
   usermoods: any;
   temp = [];
   stories: Array<any> = [];
-
+mytemp=[];
   stories2: any;
   storyform = new FormGroup({
     content: new FormControl(' ')
   })
 
   ngOnInit(): void {
+    for(var i=0;i<52;i++)this.mytemp.push(i);
+    
     this.as.getUserState().subscribe(res => {
       if (!res) this.router.navigate(['/signin'])
       this.user = res;
