@@ -18,9 +18,9 @@ url:any;
     })
     console.log(this.search);
     this.gscholar();
-    this.controllerSrc = this.sanitizer.bypassSecurityTrustResourceUrl(this.gsstring);
+  //   this.controllerSrc = this.sanitizer.bypassSecurityTrustResourceUrl(this.gsstring);
   //  this.url = this.gsstring + "&output=embed";
-   // window.location.replace(this.url);
+  //  window.location.replace(this.url);
    }
 
   ngOnInit(): void {
