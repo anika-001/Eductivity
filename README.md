@@ -5,7 +5,10 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
 The pandemic changed our daily routines, impacting everything from physical health to mental health, from education to productivity and so much more!
+
 ![Alt Text](https://media.giphy.com/media/iIRwR0Kc0OjG12oEer/giphy.gif)
+
+
 ### Eductivity is a solution to this. It signifies Education and Productivity! 
 Eductivity is an interactive platform dedicated to touching every student out there and positively impacting their education and productivity.
 
