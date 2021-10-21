@@ -36,5 +36,5 @@ It's an open space to discuss things freely. Users can create threads and contin
 
 
 Credits: 
--cVideo: pexel
+- Video: pexel
 - Image:Unsplash
