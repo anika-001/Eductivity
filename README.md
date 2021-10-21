@@ -33,3 +33,8 @@ It's an open space to discuss things freely. Users can create threads and contin
 ![Alt Text](https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif)
 
 
+
+
+Credits: 
+-cVideo: pexel
+- Image:Unsplash
